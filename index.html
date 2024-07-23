@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Melyssa</title>
+</head>
+<body>
+    <div class="header-cor">
+        <header>
+            <h1 class="titulo">Grupo Da Melyssa</h1>
+            <div class="barra-de-pesquisa">
+                <input type="text" class="input-pesquisa" id="pesquisa" placeholder="Pesquisar ID">
+                <button class="botao-pesquisar">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
+            </div>
+        </header>
+    </div>
+
+    <main class="main">
+        <section class="container-adicionar">
+            <div class="dados-adicionar">
+                <input type="text" placeholder="Título" id="titulo">
+                <input type="text" placeholder="Descrição" id="descricao">
+            </div>
+            <button class="adicionar">
+                <span class="texto-add">Adicionar nova tarefa </span>
+                <div class="carregando-nova"></div>
+            </button>
+        </section>
+        <div class="carregando"></div>
+        <section class="container-todas-tarefas">
+            <div class="container-tarefas"></div>
+        </section>
+
+        <dialog class="editar-modal-container">
+            <div class="editar-modal">
+                <h2>Editar tarefa</h2>
+                <div class="input-edit-container">
+                    <p class="text-editar id-editar">Usuário:</p>
+                    <label for="titulo">Título</label>
+                    <input type="text" name="" id="titulo" class="titulo-editar">
+                    <label for="descricao">Descrição</label>
+                    <input type="text" name="" id="descricao" class="descricao-editar">
+                </div>
+                <button class="atualizar">Salvar</button>
+                <button class="cancelar-edicao">Cancelar</button>
+            </div>
+        </dialog>
+    </main>
+</body>
+</html>
